@@ -2,13 +2,13 @@ import axios from 'axios'
 import { Dispatch } from 'redux'
 import { ActionType } from './types'
 
-interface Task {
+export interface Task {
 	id: number
 	title: string
 	completed: boolean
 }
 
-interface FetchTasks {
+export interface FetchTasks {
 	type: ActionType.fetchTasks
 	payload: Task[]
 }
